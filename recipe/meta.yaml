@@ -18,6 +18,7 @@ requirements:
   host:
     - pip
     - python >=3.7
+    - setuptools
   run:
     - opt_einsum_fx >=0.1.4
     - python >=3.7
