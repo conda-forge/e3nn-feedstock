@@ -6,22 +6,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/e3nn-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/e3nn-{{ version }}.tar.gz
   sha256: 66b4ea3fd1145ea11de8d91361c0367de2241999803686edeb2d374559e5f023
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
     - setuptools
   run:
     - opt_einsum_fx >=0.1.4
-    - python >=3.7
+    - python >={{ python_min }}
     - scipy
     - sympy
     - pytorch >=1.8.0
@@ -33,6 +33,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://e3nn.org
