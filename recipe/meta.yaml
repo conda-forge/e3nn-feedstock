@@ -1,5 +1,5 @@
 {% set name = "e3nn" %}
-{% set version = "0.5.4" %}
+{% set version = "0.5.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/e3nn-{{ version }}.tar.gz
-  sha256: 66b4ea3fd1145ea11de8d91361c0367de2241999803686edeb2d374559e5f023
+  sha256: e91795db98d23a56b3df2532fb60d1401ce96f9b940263855b91ee7b98885435
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
