@@ -3,7 +3,7 @@ About e3nn-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/e3nn-feedstock/blob/main/LICENSE.txt)
 
-Home: https://e3nn.org
+Home: https://e3nn.org/
 
 Package license: MIT
 
@@ -13,11 +13,10 @@ Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=16271&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/e3nn-feedstock?branchName=main">
-      </a>
+      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
     </td>
   </tr>
 </table>
